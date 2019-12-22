@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QUIZ</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top-line">
+      <button
+        type="button"
+        class="btn btn-link highscore"
+        onclick="highscores()"
+      >
+        View Highscores
+      </button>
+
+      <div id="clock" class="hidden">
+        <span id="timer">
+          Timer:
+          <span id="time">75</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row question">
+        <div class="col-md-12 text-center top">
+          <h1 id="title">Coding Quiz Challenge</h1>
+        </div>
+      </div>
+      <div class="row answers">
+        <div class="col-md-12 text-center words">
+          <br />
+          <p class="moreW">
+            Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <br />
+          <button
+            type="button"
+            id="startbtn"
+            class="btn btn-link main-buttons"
+            onclick="start()"
+          >
+            Start Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
